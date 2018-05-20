@@ -12,6 +12,7 @@ class Api::V1::NotesController < ApplicationController
   end
 
   def create
+
     @note = Note.create(note_params)
 
     render json: @note, status: 200
